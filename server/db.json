@@ -4,7 +4,7 @@
       "id": 1,
       "image": "assets/images/products/image1.jpg",
       "name": "Black Hoodie",
-      "price": "24",
+      "price": "25",
       "rating": 5
     },
     {
@@ -17,7 +17,7 @@
     {
       "id": 3,
       "image": "assets/images/products/image3.jpg",
-      "name": "White",
+      "name": "White Shirt",
       "price": "85.0",
       "rating": 3
     },
