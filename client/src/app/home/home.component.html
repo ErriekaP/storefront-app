@@ -1,1 +1,9 @@
-<p>home works!</p>
+<div class="column">
+  <div class="row wrap space-between gap-1">
+    <app-product
+      *ngFor="let product of products"
+      [product]="product"
+      (productOutput)="onProductOutput($event)"
+    ></app-product>
+  </div>
+</div>
