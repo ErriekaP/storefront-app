@@ -22,8 +22,9 @@ import { ButtonModule } from 'primeng/button';
 export class EditPopupComponent {
   @Input() display: boolean = false;
   @Input() header!: string;
-
-  @Input() product: Product = {
+  @Output() displayChange = new EventEmitter<boolean>();
+  @Input()
+  product: Product = {
     name: '',
     image: '',
     price: '',
@@ -34,9 +35,12 @@ export class EditPopupComponent {
 
   onConfirm() {
     this.confirm.emit(this.product);
+    this.display = false;
+    this.displayChange.emit(this.display);
   }
 
   onCancel() {
     this.display = false;
+    this.displayChange.emit(this.display);
   }
 }
